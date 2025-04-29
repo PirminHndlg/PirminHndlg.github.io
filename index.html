@@ -53,6 +53,7 @@
             border-color: var(--secondary-color);
             border-radius: 15px;
             overflow: hidden;
+            position: relative;
         }
 
         .card:hover {
@@ -121,6 +122,20 @@
         .social-links a:hover {
             transform: scale(1.2);
         }
+
+        .year-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -162,11 +177,11 @@
                 <div class="skill-item">Java</div>
                 <div class="skill-item">C++</div>
                 <div class="skill-item">SQL</div>
-                <br>
+                <hr>
+                <div class="skill-item">Bootstrap</div>
                 <div class="skill-item">Flask</div>
                 <div class="skill-item">Django</div>
                 <div class="skill-item">PostgreSQL</div>
-                <div class="skill-item">Bootstrap</div>
             </div>
         </div>
     </section>
@@ -178,6 +193,7 @@
                 <!-- Management System for volunteer work -->
                 <div class="col-md-6">
                     <div class="card h-100">
+                        <span class="year-badge">2025</span>
                         <img src="" class="card-img-top" alt="Projekt">
                         <div class="card-body">
                             <h3 class="h5">Verwaltungssystem für Freiwilligendienste</h3>
@@ -197,6 +213,7 @@
                 <!-- Autoposition Algorithm for JSXGraph -->
                 <div class="col-md-6">
                     <div class="card h-100">
+                        <span class="year-badge">2024/25</span>
                         <img src="images/jsxgraph.png" class="card-img-top" alt="Projekt">
                         <div class="card-body">
                             <h3 class="h5">Universitätsprojekt Autoposition Algorithmus für <a
@@ -217,9 +234,10 @@
                 <!-- Website for selection seminar for volunteers -->
                 <div class="col-md-6">
                     <div class="card h-100">
-                        <img src="" class="card-img-top" alt="Projekt">
+                        <span class="year-badge">2024</span>
+                        <br>
                         <div class="card-body">
-                            <h3 class="h5">Website für Auswahlseminar für Ehrenamtliche</h3>
+                            <h3 class="h5">Website für Auswahlseminar für Freiwilligendienste</h3>
                             <p class="card-text">
                                 Ein umfassendes Formularsystem zur Verwaltung von Bewerber*innen für Auswahlseminare.
                                 Die Anwendung ermöglicht die Zuordnung und Beobachtung der Teilnehmer*innen,
@@ -234,17 +252,21 @@
                 <!-- Website with schedule for an event -->
                 <div class="col-md-6">
                     <div class="card h-100">
+                        <span class="year-badge">2024</span>
                         <img src="" class="card-img-top" alt="Projekt">
                         <div class="card-body">
                             <h3 class="h5">Website mit Programmübersicht für eine Veranstaltung</h3>
                             <p class="card-text">
-                                Eine umfangreiche Programmübersicht für die Christlichen Begegnungstage in Frankfurt an der Oder, 
+                                Eine Programmübersicht für die Christlichen Begegnungstage in Frankfurt an der Oder, 
                                 einer Großveranstaltung mit über 7.000 Teilnehmenden. Die Anwendung verwaltet mehr als 
-                                100 verschiedene Veranstaltungen und ermöglicht es den Besuchern, sich über das 
-                                vielfältige Programm zu informieren und ihre persönliche Agenda zu planen.
+                                100 verschiedene Veranstaltungen und ermöglicht es den Besucher*innen, sich über das 
+                                vielfältige Programm zu informieren und ihre persönliche Agenda zu planen. Die Website 
+                                ist in fünf verschiedenen Sprachen abrufbar, um die internationale Teilnehmerschaft 
+                                optimal zu unterstützen.
                             </p>
-                            <div class="text-center">
-                                <a href="https://github.com/PirminHndlg/CBT2024" target="_blank" class="btn btn-primary"><i class="fab fa-github me-2"></i>Projekt ansehen</a>
+                            <div class="text-center d-flex flex-column justify-content-center flex-md-row gap-2">
+                                <a href="https://github.com/PirminHndlg/CBT2024" target="_blank" class="btn btn-primary"><i class="fab fa-github me-2"></i>Projekt auf Github</a>
+                                <a href="https://web.archive.org/web/20240909090657/https://www.cbt2024.de/" target="_blank" class="btn btn-primary"><i class="fas fa-globe me-2"></i>Website in Archive</a>
                             </div>
                         </div>
                     </div>
@@ -253,6 +275,7 @@
                 <!-- Website for gravestone inscriptions in church -->
                 <div class="col-md-6">
                     <div class="card h-100">
+                        <span class="year-badge">2023</span>
                         <img src="images/grabsteine.png" class="card-img-top" alt="Projekt">
                         <div class="card-body">
                             <h3 class="h5">Website für Grabsteininschriften in der Kirche</h3>
@@ -276,6 +299,7 @@
                 <!-- Website for local music archive -->
                 <div class="col-md-6">
                     <div class="card h-100">
+                        <span class="year-badge">2023</span>
                         <img src="images/musikarchiv.png" class="card-img-top" alt="Projekt">
                         <div class="card-body">
                             <h3 class="h5">Website für lokales Musikarchiv</h3>
@@ -296,6 +320,7 @@
                 <!-- iOS application for home automation -->
                 <div class="col-md-6">
                     <div class="card h-100">
+                        <span class="year-badge">2022</span>
                         <img src="" class="card-img-top" alt="Projekt">
                         <div class="card-body">
                             <h3 class="h5">iOS-Anwendung für Hausautomation</h3>
@@ -312,7 +337,8 @@
                 <!-- iOS application for substitute schedule in school -->
                 <div class="col-md-6">
                     <div class="card h-100">
-                        <img src="" class="card-img-top" alt="Projekt">
+                        <span class="year-badge">2022</span>
+                        <img src="images/kts-vertretung.jpg" class="card-img-top" alt="Projekt">
                         <div class="card-body">
                             <h3 class="h5">iOS-Anwendung für Vertretungsplan in der Schule</h3>
                             <p class="card-text">
@@ -347,9 +373,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h3 class="h5">Katholische Theresienschule Berlin</h3>
+                            <h3 class="h5">Informatikunterricht auf dem Gymnasium</h3>
                             <p class="text-muted">2019 - 2022</p>
-                            <h4 class="h6">Informatikkurs</h4>
                         </div>
                     </div>
                 </div>
@@ -399,6 +424,10 @@
                         <li class="list-inline-item">
                             <a href="https://github.com/PirminHndlg" target="_blank" class="text-white"><i
                                     class="fab fa-github"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/pirmin-hinderling-8155212b0/" target="_blank" class="text-white"><i
+                                    class="fab fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
